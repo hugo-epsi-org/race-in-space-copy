@@ -19,7 +19,7 @@ class Track():
 
     def race(self):
         fastest = sorted(self.spaceships, key=lambda spaceship: spaceship.get_speed(), reverse=True)[0]
-        return print(f"{fastest.get_name()} l'emporte")
+        return print(f"{fastest.get_name()} l'emporte avec un temps de {round(self.length/fastest.get_speed(), 2)}")
 
 racer1 = SpaceShip('racer1', 2)
 racer2 = SpaceShip('racer2', 5)
